@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/output.css">
+    <script src="../js/auth.js"defer></script>
+</head>
+<body class="bg-dark-bg text-white font-style">
+    <header class="  bg-[#BFC6C4] flex justify-between gap-4 border-b border-primary py-2 px-3">
+            <img src="../assets/icons/moviespace-icon.png" alt="MOVIESPACE" class="w-[100px] h-[40px] md:w-auto">
+            <div class="flex gap-4 items-center">
+                <p class="text-[#202020] text-[10px] md:text-[15px]"><a href="">ALL FILMS</a></p>
+                <button class="font-bold rounded-full px-6 py-2 bg-primary font-style text-[#202020]">LOGIN</button>
+            </div>
+    </header>
+    <main class="flex-col items-center min-h-screen flex justify-center ">
+        <form id="login-form" action="" method="post" class="w-full px-10 md:w-[400px] md:px-0 mx-auto flex flex-col md:gap-6">
+            <img src="../assets/icons/moviespace-icon.png" alt="Moviespace Logo" class="mx-auto mb-10 h-11">
+            <div >
+                <input id="input-user" type="text" name="email" placeholder="Email"class="bg-transparent w-full outline-none py-2 border-b "  required>
+                <p id="error-message-email" class="text-[#FF0000] hidden">Email alredy exists!</p>
+            </div>
+            <div>
+                <input type="password" name="password" placeholder="Password" class="bg-transparent w-full outline-none py-2 border-b " required>
+            </div>
+            <div>
+                <input type="password" name="password" placeholder="Create Password" class="bg-transparent w-full outline-none py-2 border-b "required>
+            </div>
+            <button class="font-bold rounded-full mx-auto m-8 w-[120px] h-[40px] bg-primary font-style text-[#202020] ">SIGNUP</button>
+        </form>
+        <p class="font-bold text-[#CE952A] text-center font-font">REGISTERED USER? <a href="#" class="hover:text-[#FFD400]">LOGIN HERE</a></p>
+    </main>
+    
+</body>
+</html>

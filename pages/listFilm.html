@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/output.css">
+    <script src="../js/script.js"defer></script>
+</head>
+<body class="bg-dark-bg text-white font-style overflow-x-hidden">
+    <header class="  bg-[#BFC6C4] flex flex-wrap justify-between gap-4 border-b border-primary py-2 px-3">
+            <img src="../assets/icons/moviespace-icon.png" alt="MOVIESPACE" class="w-[100px] h-[40px] md:w-auto">
+            <div class="flex  gap-2 md:gap-4 items-center">
+                <p class="text-[#202020] text-[8px] md:text-[15px] font-bold"><a href="">ALL FILMS</a></p>
+                <p class="text-[#202020] text-[8px] md:text-[15px] font-bold"><a href="">MY WATCHLISTS</a></p>
+                <button id="btn-login" class="font-bold rounded-full px-3 py-1 text-xs md:text-base md:px-6 md:py-3 bg-primary font-style text-[#202020]">LOGIN</button>
+                <div id="user-profile" class=" bg-[#3F51B5] flex items-center justify-center font-bold w-10 h-10  rounded-full hidden">
+                    <p>VJ</p>
+                </div>
+            </div>
+    </header>
+    <div class="font-style flex flex-col gap-4 py-2">
+        <h1 class="text-xl md:text-3xl px-6 pt-2 md:pt-5 md:px-10 font-bold">All Films (100)</h1>
+        <div class="flex gap-4 px-4 md:px-10 py-3 md:py-5">
+            <select name="genre" class="bg-transparent border-gray-300  md:h-10  text-white bg-dark-card px-3 border rounded-full cursor-pointer">
+                 <option value="genre">GENRE</option>
+            </select>
+            <div class="flex items-center gap-2 border-gray-300 rounded-full relative w-fit ">
+                <img src="../assets/icons/sort-icon.png" alt="sort icon" class="w-4 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                <select name="genre" class="bg-transparent border-gray-300 text-white appearance-none bg-dark-card px-3 pr-10 border rounded-full cursor-pointer h-10">
+                     <option value="sort">SORT BY IMDB </option>
+                </select>
+            </div>
+            
+        </div>
+    </div>
+    <section id="movies-list" class="grid grid-cols-1 gap-6 px-4 md:px-10 py-1"></section>
+        <div class="flex justify-end pb-10 px-10 tex-[8px]">
+            <p class="pr-5 ">item per pages: 10 </p>
+            <p><span id="current-page" class="px-3"> 1</span>of <span id="total-pages" class="px-3"> 500</span></p>
+            <button class="px-2"><img src="../assets/icons/arrow-left-icon.png" alt="arrow left" class="w-6"></button>
+            <button class="px-2"><img src="../assets/icons/arrow-right-icon.png" alt="arrow right" class="w-6"></button>
+        </div>
+</body>
+</html>
