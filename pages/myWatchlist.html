@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/output.css">
+    <script src="../js/myWatchlist.js"defer></script>
+</head>
+<body class="bg-dark-bg text-white font-style overflow-x-hidden">
+    <header class="  bg-[#BFC6C4] flex flex-wrap justify-between gap-4 border-b border-primary py-2 px-3">
+            <img src="../assets/icons/moviespace-icon.png" alt="MOVIESPACE" class="w-[100px] h-[40px] md:w-auto">
+            <div class="flex  gap-2 md:gap-4 items-center">
+                <p class="text-[#202020] text-[8px] md:text-[15px] font-bold"><a href="./listFilm.html">ALL FILMS</a></p>
+                <p class="text-[#202020] text-[8px] md:text-[15px] font-bold"><a href="">MY WATCHLISTS</a></p>
+                <button id="btn-login" class="font-bold rounded-full px-3 py-1 text-xs md:text-base md:px-6 md:py-3 bg-primary font-style text-[#202020] hidden">LOGIN</button>
+                <div id="user-profile" class=" bg-[#3F51B5] flex items-center justify-center font-bold w-10 h-10  rounded-full ">
+                    <p>VJ</p>
+                </div>
+            </div>
+    </header>
+    <div class="font-style flex flex-col gap-4 py-2">
+         <h1 id="movie-lists" class="text-xl md:text-3xl px-6 pt-2 md:pt-5 md:px-10 font-bold"></h1>
+    </div>
+    <section id="movies-list" class="grid grid-cols-1 gap-6 px-4 md:px-10 py-1"></section>
+</body>
+</html>
