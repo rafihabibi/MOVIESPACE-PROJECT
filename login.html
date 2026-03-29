@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../dist/output.css">
-    <script src="./js/auth.js" defer></script>
+    <script src="./js/login.js" defer></script>
 </head>
 <body class="bg-dark-bg text-white font-style">
    <header class="  bg-[#BFC6C4] flex justify-between gap-4 border-b border-primary py-2 px-3">
@@ -23,15 +23,17 @@
         <form id="login-form" action="" method="post">
             <img src="../assets/icons/moviespace-icon.png" alt="Moviespace Logo" class="mx-auto mb-10 h-11">
             <div class="py-[10px]">
-                <input id="input-user" type="text" name="email" placeholder="Email"class="bg-transparent w-full outline-none py-2 border-b "  required>
-                <p id="error-message-email" class=" text-[#FF0000] hidden">Email alredy exists!</p>
+                <input id="input-user" type="email"  placeholder="Email"class="bg-transparent w-full outline-none py-2 border-b "  required>
+                <p id="error-message-email" class="text-[#FF0000] hidden">Email is not registered, please Sign Up!</p>
             </div>
             <div class="py-[10px]">
-                <input type="password" name="password" placeholder="Password" class="bg-transparent w-full outline-none py-2 border-b " required>
+                <input id="input-password" type="password" placeholder="Password" class="bg-transparent w-full outline-none py-2 border-b " required>
+                <p id="error-message-password" class="text-[#FF0000] hidden">Wrong Password! DUMBASS!</p>
             </div>
             <button class="flex justify-center py-2 font-bold rounded-full mx-auto m-8 w-[120px] h-[40px] bg-primary font-style text-[#202020] hover:bg-[#ffd608] ">LOGIN</button>
+            
         </form>
-            <p class="font-bold text-[#CE952A] text-center font-style">NEW USER? <a href="#" class="hover:text-[#FFD400]">REGISTER HERE</a></p>
+            <p class="font-bold text-[#CE952A] text-center font-style">NEW USER? <a href="./pages/signUp.html" class="hover:text-[#FFD400]">REGISTER HERE</a></p>
         </div>
         
     </main>
