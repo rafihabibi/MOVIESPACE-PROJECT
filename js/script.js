@@ -91,24 +91,7 @@ async function getMovies() {
         </div>`
         moviesSection.innerHTML += movieList;
     };
-    const movieWatchlist = document.querySelectorAll(".btn-watchlist");
-    for(const btnList of movieWatchlist) {
-        btnList.addEventListener("click", function(event){
-            const movieId = event.target.getAttribute("data-id");
-            
-            const myWatchlists = (JSON.parse(localStorage.getItem("movieWatchLists"))) || [];
-
-            if(!myWatchlists.includes(movieId)) {
-                myWatchlists.push(movieId);
-                const stringData = JSON.stringify(myWatchlists);
-                localStorage.setItem("movieWatchLists", stringData);
-                alert("succesfull add to watchlist!");
-                console.log(movieId);
-            };
-            
-        });
-    };
-
+    
     } catch (error) {
         console.error(error);
     };
