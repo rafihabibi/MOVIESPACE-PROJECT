@@ -84,7 +84,7 @@ async function getMovies() {
                 <p class="py-1 px-4 text-center md:text-left md:px-0 line-clamp-3 text-xs md:text-sm text-gray-300">${movie.overview}</p>
                 <div class="flex flex-col justify-center items-center md:items-start md:justify-start md:flex-row md:px-0 gap-2 py-2">
                     <button class="px-2 md:px-6 py-2 text-xs md:text-sm rounded-full  border  bg-white text-[#000000] font-semibold">VIEW DETAILS</button>
-                    <button data-id="${movie.id}" class="btn-watchlist rounded-full text-xs md:text-sm border px-3 md:px-6 py-2 font-semibold">ADD TO WATCHLISTS</button>
+                    <button class="btn-watchlist rounded-full text-xs md:text-sm border px-3 md:px-6 py-2 font-semibold">ADD TO WATCHLISTS</button>
                 </div>
             </div>
 
