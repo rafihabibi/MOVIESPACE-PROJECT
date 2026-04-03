@@ -39,8 +39,13 @@ formLogin.addEventListener("submit", function(event) {
         passwordUser.push(passValue);
         const stringPassword = JSON.stringify(passwordUser);
         localStorage.setItem("passwordUsers", stringPassword);
+        window.alert("Successfully Registered! Redirecting to login page.")
+        window.location.href = "../index.html";
+        
     }
 });
+
+
 
 
 
